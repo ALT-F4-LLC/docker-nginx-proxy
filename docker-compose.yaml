@@ -1,0 +1,17 @@
+services:
+  nginx:
+    build:
+      context: .
+    command: start
+    environment:
+      PROXY_EXAMPLE_1: hello
+      PROXY_EXAMPLE_2: world
+    healthcheck:
+      interval: 30s
+      retries: 3
+      test: ["CMD", "curl", "-f", "http://localhost:9001"]
+      timeout: 5s
+    ports:
+      - 0.0.0.0:9001:9001
+
+version: "3.8"

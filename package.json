@@ -1,0 +1,22 @@
+{
+  "name": "docker-nginx-proxy",
+  "version": "1.0.0",
+  "description": "Docker repository for custom NGINX proxy.",
+  "main": "index.ts",
+  "repository": "git@github.com:ALT-F4-LLC/docker-nginx-proxy.git",
+  "author": "ALT F4 LLC",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "commander": "9.0.0",
+    "nunjucks": "3.2.3"
+  },
+  "devDependencies": {
+    "@types/node": "16",
+    "@types/nunjucks": "3.2.1",
+    "ts-node": "10.6.0",
+    "typescript": "4.6.2"
+  },
+  "scripts": {
+    "build": "npx tsc --pretty"
+  }
+}
